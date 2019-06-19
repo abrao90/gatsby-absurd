@@ -1,29 +1,29 @@
 import React from 'react';
 
 import { Section, Container } from '@components/global';
-
+import {Link} from 'gatsby'
 import FaqItem from '@common/FaqItem';
 import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'Wann sollte ich einen mobilen Tierarzt nutzen?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+      <>
+        Prinzipiell macht es Sinn, darauf zu achten, wie stressempfindlich Ihr Tier auf einen Besuch beim Tierarzt reagiert. Besonders ältere Haustiere aber auch ängstliche Tiere wie z.B. Katzen oder Jungtiere fühlen sich nach aufregenden Transporten, im Beisein anderer Tiere im Wartezimmer einer Tierarztpraxis, durch die fremdartigen Gerüche und Eindrücke sowie durch lange Wartezeiten gestresst. In diesem Falle bietet Ihnen HUG A PET mobile Tierärzte, die Ihr Haustier stressfrei Zuhause (oder wahlweise im Büro) behandeln können. 
+      </>
+      <>
+      Unser Angebot ist außerdem hilfreich für Menschen, die viel beschäftigt sind und nicht immer die Zeit haben zum Tierarzt zu gehen. Außerdem bietet der tierärztliche Hausbesuch vor allem älteren Menschen und Menschen, die nicht mobil sind, eine große Erleichterung. 
+      </>
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'Welche Behandlungen sind möglich?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+      Unsere mobilen Tierärzte sind darin geübt, den Großteil an benötigter Versorgung Ihres Haustieres auch ganz komfortabel Zuhause oder im Büro durchzuführen. Jedoch kann es bei schwerwiegenden Fällen auch nötig sein, Ihr Tier für weiterführende Therapie-, sowie Diagnostikmaßnahmen oder gar Operationen mit in die Tierarztpraxis oder -klinik zu nehmen, um eine bestmögliche Versorgung sicher zu stellen.  Wir sind uns unserer Verantwortung bewusst und werden Sie schon vorab über die Behandlungsmöglichkeiten informieren.      
       </>
     ),
   },
@@ -67,7 +67,7 @@ const FAQS = [
 const Faq = () => (
   <Section id="faq">
     <Container>
-      <h1 style={{ marginBottom: 40 }}>Frequently Asked Questions</h1>
+      <h1 style={{ marginBottom: 40 }}>Häufig gestellte Fragen zum mobilen Tierarzt</h1>
       <div>
         {FAQS.map(({ title, content }) => (
           <FaqItem title={title} key={title}>
@@ -75,6 +75,7 @@ const Faq = () => (
           </FaqItem>
         ))}
       </div>
+      <h4>Click here to go to the<Link to="/faqCick"> FAQ Section</Link></h4>
     </Container>
   </Section>
 );

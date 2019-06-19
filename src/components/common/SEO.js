@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  description: 'Mobiler Tierarzt',
+  title: 'Mobiler Tierarzt Berlin',
   url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  author: 'hugapet',
+  keywords: ['tierarzt', 'berlin', 'hugapet'],
   twitter: {
-    id: '@ajayns08',
+    id: '@hugapet',
     img: '',
   },
   facebook: {
@@ -39,7 +39,7 @@ const SEO = () => {
       <meta name="keywords" content={SEO_DATA.keywords.join(', ')} />
       <meta name="author" content={SEO_DATA.author} />
       <title>{SEO_DATA.title}</title>
-      <html lang="en" />
+      <html lang="de" />
     </Helmet>
   );
 };
