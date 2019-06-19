@@ -6,6 +6,17 @@ module.exports = {
     `gatsby-plugin-svgr`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-material-ui`,
+      // If you want to use styled components, in conjunction to Material-UI, you should:
+      // - Change the injection order
+      // - Add the plugin
+      options: {
+        // stylesProvider: {
+        //   injectFirst: true,
+        // },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `team`,
